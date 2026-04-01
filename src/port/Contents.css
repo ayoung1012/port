@@ -1,0 +1,792 @@
+.branding_i {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.branding_i .branding_img {
+  width: 50%;
+}
+
+.branding_i .branding_box {
+  width: 45%;
+}
+
+.branding_i .branding_box .branding_text p {
+  line-height: 180%;
+  text-align: justify;
+}
+
+.branding_i .branding_box .branding_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.branding_i .branding_box .branding_icon .link img{
+width: 80%;
+}
+.branding_i .branding_box .branding_icon .git img{
+width: 80%;
+}
+
+/* supreme */
+.supreme_i {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.supreme_i .supreme_img {
+  width: 50%;
+}
+
+.supreme_i .supreme_box {
+  width: 45%;
+}
+
+.supreme_i .supreme_box .supreme_text p {
+  line-height: 180%;
+  text-align: justify;
+}
+
+.supreme_i .supreme_box .supreme_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.supreme_i .supreme_box .supreme_icon .link img{
+width: 80%;
+}
+.supreme_i .supreme_box .supreme_icon .git img{
+width: 80%;
+}
+
+/* uiux */
+.uiux_i {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.uiux_i .uiux_img {
+  width: 50%;
+}
+
+.uiux_i .uiux_box {
+  width: 45%;
+}
+
+.uiux_i .uiux_box .uiux_text p {
+  line-height: 180%;
+  text-align: justify;
+}
+
+.uiux_i .uiux_box .uiux_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.uiux_i .uiux_box .uiux_icon .link img{
+width: 80%;
+}
+.uiux_i .uiux_box .uiux_icon .git img{
+width: 80%;
+}
+
+/* leica */
+.leica_i {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.leica_i .leica_img {
+  width: 50%;
+}
+
+.leica_i .leica_box {
+  width: 45%;
+}
+
+.leica_i .leica_box .leica_text p {
+  line-height: 180%;
+  text-align: justify;
+}
+
+.leica_i .leica_box .leica_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.leica_i .leica_box .leica_icon .link img{
+width: 80%;
+}
+.leica_i .leica_box .leica_icon .git img{
+width: 80%;
+}
+
+/* contact */
+.contact_i {
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+/* skill */
+.skill_i {
+  position: absolute;
+  top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill_i .photo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill_i .photo .photoicon {
+  width: 5%;
+}
+
+.skill_i .photo .skillicon {
+  width: 50%;
+}
+
+.skill_i .illus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill_i .illus .illusicon {
+  width: 5%;
+}
+
+.skill_i .illus .skillicon {
+  width: 50%;
+}
+
+.skill_i .html {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.skill_i .html .htmlicon {
+  width: 5%;
+}
+
+.skill_i .html .skillicon {
+  width: 50%;
+}
+
+.skill_i .css {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.skill_i .css .cssicon {
+  width: 5%;
+}
+
+.skill_i .css .skillicon {
+  width: 50%;
+}
+
+.skill_i .js {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill_i .js .jsicon {
+  width: 5%;
+}
+
+.skill_i .js .skillicon {
+  width: 50%;
+}
+
+.skill_i .react {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill_i .react .reacticon {
+  width: 5%;
+}
+
+.skill_i .react .skillicon {
+  width: 50%;
+}
+
+.skill_i .github {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill_i .github .giticon {
+  width: 5%;
+}
+
+.skill_i .github .skillicon {
+  width: 50%;
+}
+
+.skill_i .figma {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill_i .figma .figmaicon {
+  width: 5%;
+}
+
+.skill_i .figma .skillicon {
+  width: 50%;
+}
+
+/* weather */
+.weather_i {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.weather_i .weather_img {
+  width: 55%;
+}
+
+.weather_i .weather_box {
+  width: 40%;
+}
+
+.weather_i .weather_box .weather_text p {
+  line-height: 180%;
+  text-align: justify;
+}
+
+.weather_i .weather_box .weather_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.weather_i .weather_box .weather_icon .link img{
+width: 80%;
+}
+.weather_i .weather_box .weather_icon .git img{
+width: 80%;
+}
+/* clone */
+.clone_i {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.clone_i .clone_img {
+  width: 50%;
+}
+
+.clone_i .clone_box {
+  width: 45%;
+}
+
+.clone_i .clone_box .clone_text p {
+  line-height: 180%;
+  text-align: justify;
+}
+
+.clone_i .clone_box .clone_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.clone_i .clone_box .clone_icon .link img{
+width: 80%;
+}
+.clone_i .clone_box .clone_icon .git img{
+width: 80%;
+}
+
+
+@media screen and (max-width:1360px) {
+  .branding_i {
+    top: 13%;
+  }
+
+  .supreme_i {
+    top: 10%;
+  }
+
+  .uiux_i {
+    top: 10%;
+  }
+
+  .leica_i {
+    top: 10%;
+  }
+
+  .skill_i {
+    top: 3%;
+  }
+
+  .clone_i {
+    top: 15%;
+  }
+
+  /* contact */
+  .contact_i {
+    top: 22%;
+    left: 6%;
+    gap: 40px;
+  }
+
+}
+
+@media screen and (max-width:1045px) {
+  .branding_i {
+    top: 5%;
+  }
+
+  .supreme_i {
+    top: 5%;
+  }
+
+  .uiux_i {
+    top: 5%;
+  }
+
+  .leica_i {
+    top: 5%;
+  }
+
+  .clone_i {
+    top: 8%;
+  }
+
+  .skill_i .photo {
+    margin-bottom: 8px;
+  }
+
+  .skill_i .illus {
+    margin-bottom: 8px;
+  }
+
+  .skill_i .js {
+    margin-bottom: 8px;
+  }
+
+  .skill_i .react {
+    margin-bottom: 8px;
+  }
+
+  .skill_i .github {
+    margin-bottom: 8px;
+  }
+
+  /* contact */
+  .contact_i {
+    top: 16%;
+    left: 3%;
+    gap: 20px;
+  }
+
+  /* weather */
+  .weather_i {
+    top: 13%;
+  }
+}
+
+
+@media screen and (max-width:900px) {
+  .branding_i {
+    top: 6%;
+    left: 6%;
+  }
+
+  .branding_i .branding_img {
+    width: 45%;
+  }
+
+  .branding_i .branding_box .branding_text p {
+    font-size: 0.8rem;
+  }
+
+  .branding_i .branding_box .branding_icon .link img {
+    width: 80%;
+  }
+
+  .branding_i .branding_box .branding_icon .git img {
+    width: 80%;
+  }
+
+  /* supreme */
+  .supreme_i .supreme_img {
+    width: 45%;
+  }
+
+  .supreme_i .supreme_box .supreme_text p {
+    font-size: 0.8rem;
+  }
+
+  .supreme_i .supreme_box .supreme_icon .link img {
+    width: 80%;
+  }
+
+  .supreme_i .supreme_box .supreme_icon .git img {
+    width: 80%;
+  }
+
+  /* uiux */
+  .uiux_i .uiux_img {
+    width: 45%;
+  }
+
+  .uiux_i .uiux_box .uiux_text p {
+    font-size: 0.8rem;
+  }
+
+  .uiux_i .uiux_box .uiux_icon .link img {
+    width: 80%;
+  }
+
+  .uiux_i .uiux_box .uiux_icon .git img {
+    width: 80%;
+  }
+
+
+  /* leica */
+  .leica_i .leica_img {
+    width: 45%;
+  }
+
+  .leica_i .leica_box .leica_text p {
+    font-size: 0.8rem;
+  }
+
+  .leica_i .leica_box .leica_icon .link img {
+    width: 80%;
+  }
+
+  .leica_i .leica_box .leica_icon .git img {
+    width: 80%;
+  }
+
+  /* skill */
+  .skill_i .photo {
+    margin-bottom: 6px;
+  }
+
+  .skill_i .illus {
+    margin-bottom: 6px;
+  }
+
+  .skill_i .js {
+    margin-bottom: 6px;
+  }
+
+  .skill_i .react {
+    margin-bottom: 6px;
+  }
+
+  .skill_i .github {
+    margin-bottom: 6px;
+  }
+
+  /* clone */
+  .clone_i {
+    top: 10%;
+    left: 5%;
+  }
+
+  .clone_i .clone_img {
+    width: 45%;
+  }
+
+  .clone_i .clone_box .clone_text p {
+    font-size: 0.8rem;
+  }
+
+  .clone_i .clone_box .clone_icon .link img {
+    width: 80%;
+  }
+
+  .clone_i .clone_box .clone_icon .git img {
+    width: 80%;
+  }
+
+  /* weather */
+  .weather_i {
+    top: 12%;
+    left: 5%;
+  }
+
+  .weather_i .weather_img {
+    width: 45%;
+  }
+
+  .weather_i .weather_box .weather_text p {
+    font-size: 0.8rem;
+  }
+
+  .weather_i .weather_box .weather_icon .link img {
+    width: 80%;
+  }
+
+  .weather_i .weather_box .weather_icon .git img {
+    width: 80%;
+  }
+
+
+
+  /* contact */
+  .contact_i {
+    top: 17%;
+    left: 4%;
+    gap: 15px;
+  }
+
+  .contact_i img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:830px) {
+  .branding_i {
+    top: 7%;
+    left: 4%;
+  }
+
+  .branding_i .branding_box {
+    width: 50%;
+  }
+
+  .branding_i .branding_box .branding_text p {
+    font-size: 0.6rem;
+  }
+
+  .branding_i .branding_box .branding_icon .link img {
+    width: 60%;
+  }
+
+  .branding_i .branding_box .branding_icon .git img {
+    width: 60%;
+  }
+
+  /* supreme */
+  .supreme_i {
+    top: 7%;
+  }
+
+  .supreme_i .supreme_box {
+    width: 50%;
+  }
+
+  .supreme_i .supreme_box .supreme_text p {
+    font-size: 0.6rem;
+  }
+
+  .supreme_i .supreme_box .supreme_icon .link img {
+    width: 60%;
+  }
+
+  .supreme_i .supreme_box .supreme_icon .git img {
+    width: 60%;
+  }
+
+  /* uiux */
+  .uiux_i .uiux_box {
+    width: 50%;
+  }
+
+  .uiux_i .uiux_box .uiux_text p {
+    font-size: 0.6rem;
+  }
+
+  .uiux_i .uiux_box .uiux_icon .link img {
+    width: 60%;
+  }
+
+  .uiux_i .uiux_box .uiux_icon .git img {
+    width: 60%;
+  }
+
+
+  /* leica */
+  .leica_i .leica_box {
+    width: 50%;
+  }
+
+  .leica_i .leica_box .leica_text p {
+    font-size: 0.6rem;
+  }
+
+  .leica_i .leica_box .leica_icon .link img {
+    width: 60%;
+  }
+
+  .leica_i .leica_box .leica_icon .git img {
+    width: 60%;
+  }
+
+  /* skill */
+  .skill_i {
+    top: 2%;
+  }
+
+  .skill_i .photo {
+    margin-bottom: 5px;
+  }
+
+  .skill_i .illus {
+    margin-bottom: 5px;
+  }
+
+  .skill_i .js {
+    margin-bottom: 5px;
+  }
+
+  .skill_i .react {
+    margin-bottom: 5px;
+  }
+
+  .skill_i .github {
+    margin-bottom: 5px;
+  }
+
+
+  /* weather */
+  .weather_i {
+    top: 8%;
+  }
+
+  /* contact */
+  .contact_i {
+    top: 13%;
+  }
+}
+
+@media screen and (max-width:620px) {
+  .branding_i .branding_box .branding_text p {
+    font-size: 0.7rem;
+  }
+
+  /* supreme */
+  .supreme_i .supreme_box .supreme_text p {
+    font-size: 0.7rem;
+  }
+
+  /* uiux */
+  .uiux_i .uiux_box .uiux_text p {
+    font-size: 0.7rem;
+  }
+
+  /* leica */
+  .leica_i .leica_box .leica_text p {
+    font-size: 0.7rem;
+  }
+
+  /* weather */
+  .weather_i {
+    top: 10%;
+  }
+
+  .weather_i .weather_box .weather_text p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width:395px) {
+  .branding_i {
+    top: 4%;
+  }
+
+  .branding_i .branding_box .branding_text p {
+    font-size: 0.6rem;
+  }
+
+  /* supreme */
+  .supreme_i {
+    top: 4%;
+  }
+
+  .supreme_i .supreme_box .supreme_text p {
+    font-size: 0.6rem;
+  }
+
+  /* uiux */
+  .uiux_i {
+    top: 4%;
+  }
+
+  .uiux_i .uiux_box .uiux_text p {
+    font-size: 0.6rem;
+  }
+
+  /* leica */
+  .leica_i {
+    top: 4%;
+  }
+
+  .leica_i .leica_box .leica_text p {
+    font-size: 0.6rem
+  }
+
+  /* skill */
+  .skill_i .photo {
+    margin-bottom: 4px;
+  }
+
+  .skill_i .illus {
+    margin-bottom: 4px;
+  }
+
+  .skill_i .html {
+    margin-bottom: 4px;
+  }
+
+  .skill_i .css {
+    margin-bottom: 4px;
+  }
+
+  .skill_i .js {
+    margin-bottom: 4px;
+  }
+
+  .skill_i .react {
+    margin-bottom: 4px;
+  }
+
+  .skill_i .github {
+    margin-bottom: 4px;
+  }
+
+  /* weather */
+  .weather_i {
+    top: 8%;
+  }
+}

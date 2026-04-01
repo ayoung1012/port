@@ -1,0 +1,1584 @@
+@font-face {
+  font-family: 'Zcool';
+  src: url(../font/ZCOOLKuaiLe-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Zcool';
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  width: fit-content;
+  height: fit-content;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/port/img/bg.png);
+}
+
+#allbox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.mo_allbox {
+  display: none;
+}
+
+#allbox .header_title {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  font-size: 0.9vw;
+}
+
+/* main */
+#allbox .boardbox {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  aspect-ratio: 2 / 1;
+  position: relative;
+  margin: auto;
+}
+
+/* 스타트 타일 */
+#allbox .boardbox .start {
+  width: 15%;
+  position: absolute;
+  top: -0.4%;
+  right: 0;
+}
+
+#allbox .boardbox .start .star {
+  position: absolute;
+  top: 0;
+}
+
+#allbox .boardbox .start p {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  font-size: 1.5rem;
+}
+
+#allbox .boardbox .start .arrow {
+  position: absolute;
+  top: 68%;
+  left: -20%;
+  z-index: 99;
+}
+
+/* 첫번쨰 타일 */
+#allbox .boardbox .box1 {
+  width: 20%;
+  position: absolute;
+  top: 9.5%;
+  right: 11.6%;
+}
+
+#allbox .boardbox .box1 .peo {
+  position: absolute;
+  top: -11%;
+  left: 5%;
+}
+
+
+/* 두번째 타일 */
+#allbox .boardbox .box2 {
+  width: 30%;
+  position: absolute;
+  top: 9.5%;
+  right: 24.6%;
+}
+
+#allbox .boardbox .box2 .girl {
+  position: absolute;
+  top: -35%;
+  left: 20%;
+}
+
+#allbox .boardbox .box2 .box2_text {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  font-size: 3rem;
+}
+
+/* 세번쨰 타일 */
+#allbox .boardbox .box3 {
+  width: 30%;
+  position: absolute;
+  top: 9.5%;
+  right: 48.3%;
+}
+
+#allbox .boardbox .box3 .jusa1 {
+  position: absolute;
+  top: -30%;
+}
+
+#allbox .boardbox .box3 .box3_text {
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  font-size: 3rem;
+}
+
+#allbox .boardbox .box3 .jusa2 {
+  position: absolute;
+  top: 55%;
+  right: 23%;
+}
+
+/* 네번쨰 타일 */
+#allbox .boardbox .box4 {
+  width: 20%;
+  position: absolute;
+  top: 9.5%;
+  left: 2.5%;
+}
+
+#allbox .boardbox .box4 .box4_text {
+  position: absolute;
+  top: 11%;
+  left: 13%;
+}
+
+#allbox .boardbox .box4 .tro {
+  position: absolute;
+  top: 33%;
+  left: 30%;
+}
+
+/* 다섯번째 타일 */
+#allbox .boardbox .box5 {
+  position: absolute;
+  top: 28.9%;
+  left: 2.5%;
+}
+
+#allbox .boardbox .box5 .bagu1 {
+  position: absolute;
+  top: 0;
+  left: -35%;
+}
+
+#allbox .boardbox .box5 .box5_text {
+  position: absolute;
+  top: 14%;
+  right: 0;
+  font-size: 2rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+}
+
+
+/* 여섯번째 타일 */
+#allbox .boardbox .box6 {
+  position: absolute;
+  top: 52.9%;
+  left: 2.5%;
+}
+
+#allbox .boardbox .box6 .box6_text {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 1.5rem;
+}
+
+#allbox .boardbox .box6 .colo {
+  position: absolute;
+  top: 6%;
+  right: 8%;
+}
+
+/* 일곱번째 타일 */
+#allbox .boardbox .box7 {
+  position: absolute;
+  top: 78%;
+  left: 2.5%;
+}
+
+#allbox .boardbox .box7 .pung {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+#allbox .boardbox .box7 .gg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* 여덟번째 타일 */
+#allbox .boardbox .box8 {
+  position: absolute;
+  top: 82.7%;
+  left: 21.7%;
+}
+
+#allbox .boardbox .box8 .ang {
+  position: absolute;
+  top: -23%;
+  left: 18%;
+}
+
+#allbox .boardbox .box8 .box8_text {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  font-size: 2rem;
+}
+
+/* 아홉번쨰 타일 */
+#allbox .boardbox .box9 {
+  position: absolute;
+  top: 82.7%;
+  left: 40.4%;
+}
+
+#allbox .boardbox .box9 .sup {
+  position: absolute;
+  top: -18%;
+  left: 13%;
+}
+
+#allbox .boardbox .box9 .box9_text {
+  position: absolute;
+  top: 63%;
+  left: 16%;
+  font-size: 2.2rem;
+}
+
+/* 열번째 타일 */
+#allbox .boardbox .box10 {
+  position: absolute;
+  top: 82.7%;
+  left: 62.7%;
+}
+
+#allbox .boardbox .box10 .wat {
+  position: absolute;
+  top: -23%;
+  left: 25%;
+}
+
+#allbox .boardbox .box10 .box10_text {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  font-size: 2.9rem;
+}
+
+/* 열한번째 타일 */
+#allbox .boardbox .box11 {
+  position: absolute;
+  top: 78%;
+  left: 80%;
+}
+
+#allbox .boardbox .hac {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#allbox .boardbox .pick {
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+
+/* 열두번째 타일 */
+#allbox .boardbox .box12 {
+  position: absolute;
+  bottom: 21.6%;
+  right: 0.4%;
+}
+
+#allbox .boardbox .box12_text {
+  position: absolute;
+  top: 23%;
+  left: 0;
+  writing-mode: vertical-rl;
+  font-size: 2.4rem;
+}
+
+#allbox .boardbox .ca {
+  position: absolute;
+  top: 12%;
+  right: 6%;
+}
+
+/* 열세번째 타일 */
+#allbox .boardbox .box13 {
+  position: absolute;
+  bottom: 45%;
+  right: 0.4%;
+}
+
+#allbox .boardbox .box13_text {
+  position: absolute;
+  top: 13%;
+  left: 3%;
+  writing-mode: vertical-rl;
+  font-size: 2.1rem;
+}
+
+#allbox .boardbox .box13 .heart_1 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+
+#allbox .boardbox .box13 .heart_2 {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+/* contents */
+.contents {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 60%;
+  height: 55%;
+  z-index: 100;
+  display: none; /* 기본값 숨김 */
+}
+
+.contents.open {
+  display: block; /* open 클래스 추가 시 노출 */
+}
+
+.contents_i {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 닫기 버튼 스타일 */
+.close_btn {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  z-index: 101;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close_btn:hover {
+  color: #f00;
+}
+
+/* portfolio */
+.portfolio_i {
+  position: absolute;
+  top: 25%;
+}
+
+/* abou<profile> */
+.profile_i {
+  width: 100%;
+  position: absolute;
+  top: 4%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.profile_i .profile_img {
+  width: 45%;
+}
+
+.profile_i .profile_text p {
+  margin-bottom: 35px;
+  font-size: 1.5rem;
+}
+
+.profile_i .profile_text p:last-child {
+  margin-bottom: 0;
+}
+
+/* cretificate */
+.cretificate_i {
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  gap: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cretificate_i .cretificate_text p {
+  margin-bottom: 35px;
+  font-size: 1.5rem;
+}
+
+.cretificate_i .cretificate_text p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+@media screen and (max-width:1360px) {
+  #allbox .boardbox {
+    max-width: 1024px;
+  }
+
+  /* 1 */
+  #allbox .boardbox .box1 {
+    width: 17%;
+    top: 9.4%;
+    right: 14.6%;
+  }
+
+  #allbox .boardbox .box1 .box1_tile img {
+    height: 124px;
+  }
+
+  #allbox .boardbox .box1 .peo {
+    width: 85%;
+  }
+
+  /* 2 */
+  #allbox .boardbox .box2 {
+    width: 24%;
+    top: 9.4%;
+    right: 30.9%;
+  }
+
+  #allbox .boardbox .box2 .box2_tile img {
+    height: 124px;
+  }
+
+  #allbox .boardbox .box2 .girl img {
+    width: 90%;
+  }
+
+  #allbox .boardbox .box2 .box2_text {
+    top: 45%;
+    left: 15%;
+    font-size: 2.7rem;
+  }
+
+  /* 3 */
+  #allbox .boardbox .box3 {
+    width: 24%;
+    top: 9.4%;
+    right: 54.6%;
+  }
+
+  #allbox .boardbox .box3 .jusa1 {
+    left: 5%;
+  }
+
+  #allbox .boardbox .box3 .jusa1 img {
+    width: 85%;
+  }
+
+  #allbox .boardbox .box3 .jusa2 {
+    top: 60%;
+    right: -6%;
+  }
+
+  #allbox .boardbox .box3 .jusa2 img {
+    width: 80%;
+  }
+
+  /* 4 */
+  #allbox .boardbox .box4 {
+    width: 19.7%;
+    top: 9.4%;
+    left: 2.1%;
+  }
+
+  #allbox .boardbox .box4 .box4_text {
+    width: 72%;
+  }
+
+  #allbox .boardbox .box4 .tro img {
+    width: 90%;
+  }
+
+  /* 5 */
+  #allbox .boardbox .box5 {
+    top: 26.1%;
+    left: 2.1%;
+  }
+
+  #allbox .boardbox .box5 .box5_tile img {
+    width: 86%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 {
+    left: -25%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 img {
+    width: 85%;
+  }
+
+  #allbox .boardbox .box5 .box5_text {
+    font-size: 1.8rem;
+    right: 14%;
+  }
+
+  /* 6 */
+  #allbox .boardbox .box6 {
+    top: 46.8%;
+    left: 2.1%;
+  }
+
+  #allbox .boardbox .box6 .box6_tile img {
+    width: 86%;
+  }
+
+  #allbox .boardbox .box6 .box6_text {
+    font-size: 1.3rem;
+  }
+
+  #allbox .boardbox .box6 .colo img {
+    width: 85%;
+  }
+
+  /* 7 */
+  #allbox .boardbox .box7 {
+    width: 19.7%;
+    top: 68.4%;
+    left: 2.1%;
+  }
+
+  #allbox .boardbox .box7 .pung {
+    top: 3%;
+    left: 3%;
+  }
+
+  #allbox .boardbox .box7 .pung img {
+    width: 80%;
+  }
+
+  /* 8 */
+  #allbox .boardbox .box8 {
+    top: 72.3%;
+    left: 21.4%;
+  }
+
+  #allbox .boardbox .box8 .box8_tile img {
+    width: 87%;
+  }
+
+  #allbox .boardbox .box8 .ang img {
+    width: 85%;
+  }
+
+  #allbox .boardbox .box8 .box8_text {
+    font-size: 1.7rem;
+  }
+
+  /* 9 */
+  #allbox .boardbox .box9 {
+    top: 72.3%;
+    left: 40.5%;
+  }
+
+  #allbox .boardbox .box9 .box9_tile img {
+    width: 87%;
+  }
+
+  #allbox .boardbox .box9 .sup img {
+    width: 90%;
+  }
+
+  #allbox .boardbox .box9 .box9_text {
+    font-size: 1.8rem;
+  }
+
+  /* 10 */
+  #allbox .boardbox .box10 {
+    top: 72.3%;
+    left: 63.1%;
+  }
+
+  #allbox .boardbox .box10 .box10_tile img {
+    width: 87%;
+  }
+
+  #allbox .boardbox .box10 .wat img {
+    width: 85%;
+  }
+
+  #allbox .boardbox .box10 .box10_text {
+    font-size: 2.4rem;
+  }
+
+  /* 11 */
+  #allbox .boardbox .box11 {
+    width: 19.7%;
+    top: 68.4%;
+  }
+
+  #allbox .boardbox .box11 .hac img {
+    width: 85%;
+  }
+
+  #allbox .boardbox .box11 .pick {
+    width: 75%;
+  }
+
+  /* 12 */
+  #allbox .boardbox .box12 {
+    bottom: 31.3%;
+    right: -2.2%;
+  }
+
+  #allbox .boardbox .box12 .box12_tile img {
+    width: 86%;
+  }
+
+  #allbox .boardbox .box12 .box12_text {
+    font-size: 2.1rem;
+  }
+
+  #allbox .boardbox .box12 .ca {
+    right: 10%;
+  }
+
+  #allbox .boardbox .box12 .ca img {
+    width: 85%;
+  }
+
+  /* 13 */
+  #allbox .boardbox .box13 {
+    bottom: 51.5%;
+    right: -2.2%;
+  }
+
+  #allbox .boardbox .box13 .box13_tile img {
+    width: 86%;
+  }
+
+  #allbox .boardbox .box13 .box13_text {
+    font-size: 1.8rem;
+    left: 3%;
+  }
+
+  #allbox .boardbox .box13 .heart_1 {
+    top: 0;
+  }
+
+  /* portfolio */
+  .portfolio_i {
+    top: 20%;
+  }
+
+  /* contenst */
+  .contents {
+    top: 28%;
+  }
+
+  /* abou<profile> */
+  .profile_i .profile_text p {
+    font-size: 1.2rem;
+  }
+
+  /* cretificate */
+  .cretificate_i {
+    top: 12%;
+    left: 6%;
+  }
+
+  .cretificate_i .cretificate_text p {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media screen and (max-width:1045px) {
+  #allbox .boardbox {
+    max-width: 900px;
+  }
+
+  #allbox .boardbox .start_tile img {
+    height: 240px;
+  }
+
+  #allbox .boardbox .start .star img {
+    width: 85%;
+  }
+
+  #allbox .boardbox .start p {
+    top: 55%;
+    font-size: 1.3rem;
+  }
+
+  #allbox .boardbox .start .arrow {
+    top: 65%;
+    left: -17%;
+  }
+
+  #allbox .boardbox .start .arrow img {
+    width: 85%;
+  }
+
+
+  /* 1 */
+  #allbox .boardbox .box1 {
+    top: 13.4%;
+  }
+
+  #allbox .boardbox .box1 .box1_tile img {
+    height: 110px;
+  }
+
+  /* 2 */
+  #allbox .boardbox .box2 {
+    top: 13.4%;
+  }
+
+  #allbox .boardbox .box2 .box2_tile img {
+    height: 110px;
+  }
+
+  #allbox .boardbox .box2 .girl {
+    left: 23%;
+  }
+
+  #allbox .boardbox .box2 .girl img {
+    width: 85%;
+  }
+
+  #allbox .boardbox .box2 .box2_text {
+    font-size: 2.5rem;
+    top: 48%;
+  }
+
+  /* 3 */
+  #allbox .boardbox .box3 {
+    top: 13.4%;
+  }
+
+  #allbox .boardbox .box3 .box3_tile img {
+    height: 110px;
+  }
+
+  #allbox .boardbox .box3 .jusa1 {
+    top: -28%;
+  }
+
+  #allbox .boardbox .box3 .jusa1 img {
+    width: 70%;
+  }
+
+  #allbox .boardbox .box3 .jusa2 {
+    right: -14%;
+  }
+
+  #allbox .boardbox .box3 .jusa2 img {
+    width: 70%;
+  }
+
+  #allbox .boardbox .box3 .box3_text {
+    font-size: 2.7rem;
+  }
+
+  /* 4 */
+  #allbox .boardbox .box4 {
+    top: 13.4%;
+  }
+
+  /* 5 */
+  #allbox .boardbox .box5 {
+    top: 28%;
+  }
+
+  #allbox .boardbox .box5 .box5_tile img {
+    width: 76%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 {
+    left: -14%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 img {
+    width: 70%;
+    top: 16%;
+  }
+
+  #allbox .boardbox .box5 .box5_text {
+    font-size: 1.5rem;
+    right: 25%;
+  }
+
+  /* 6 */
+  #allbox .boardbox .box6 {
+    top: 46%;
+  }
+
+  #allbox .boardbox .box6 .box6_tile img {
+    width: 76%;
+  }
+
+  #allbox .boardbox .box6 .colo {
+    right: 10%;
+  }
+
+  #allbox .boardbox .box6 .colo img {
+    width: 70%;
+  }
+
+  #allbox .boardbox .box6 .box6_text {
+    font-size: 1.2rem;
+  }
+
+  /* 7 */
+  #allbox .boardbox .box7 {
+    top: 65%;
+  }
+
+  /* 8 */
+  #allbox .boardbox .box8 {
+    top: 68.5%;
+  }
+
+  #allbox .boardbox .box8 .box8_tile img {
+    width: 76%;
+  }
+
+  #allbox .boardbox .box8 .ang img {
+    width: 70%;
+  }
+
+  #allbox .boardbox .box8 .box8_text {
+    font-size: 1.5rem;
+  }
+
+  /* 9 */
+  #allbox .boardbox .box9 {
+    top: 68.5%;
+    left: 40.4%;
+  }
+
+  #allbox .boardbox .box9 .box9_tile img {
+    width: 76%;
+  }
+
+  #allbox .boardbox .box9 .sup img {
+    width: 80%;
+  }
+
+  #allbox .boardbox .box9 .box9_text {
+    font-size: 1.5rem;
+  }
+
+  /* 10 */
+  #allbox .boardbox .box10 {
+    top: 68.5%;
+    left: 63%;
+  }
+
+  #allbox .boardbox .box10 .box10_tile img {
+    width: 76%;
+  }
+
+  #allbox .boardbox .box10 .wat {
+    left: 20%;
+  }
+
+  #allbox .boardbox .box10 .wat img {
+    width: 80%;
+  }
+
+  #allbox .boardbox .box10 .box10_text {
+    font-size: 1.9rem;
+  }
+
+  /* 11 */
+  #allbox .boardbox .box11 {
+    top: 65%;
+    left: 80.5%;
+  }
+
+  /* 12 */
+  #allbox .boardbox .box12 {
+    bottom: 34.6%;
+    right: -5.1%;
+  }
+
+  #allbox .boardbox .box12 .box12_tile img {
+    width: 76%;
+  }
+
+  #allbox .boardbox .box12 .box12_text {
+    font-size: 2rem;
+  }
+
+  #allbox .boardbox .box12 .ca {
+    top: 13%;
+    right: 15%;
+  }
+
+  #allbox .boardbox .box12 .ca img {
+    width: 75%;
+  }
+
+  /* 13 */
+  #allbox .boardbox .box13 {
+    bottom: 52.2%;
+    right: -5.1%;
+  }
+
+  #allbox .boardbox .box13 .box13_tile img {
+    width: 76%;
+  }
+
+  #allbox .boardbox .box13 .box13_text {
+    font-size: 1.6rem;
+  }
+
+  #allbox .boardbox .box13 .heart_1 img {
+    width: 80%;
+  }
+
+  #allbox .boardbox .box13 .heart_2 img {
+    width: 80%;
+  }
+
+  /* contenst */
+  .contents {
+    top: 28%;
+  }
+
+  /* abou<profile> */
+  .profile_i .profile_text p {
+    font-size: 1rem;
+  }
+
+  /* cretificate */
+  .cretificate_i {
+    top: 11%;
+  }
+
+  .cretificate_i .cretificate_text p {
+    font-size: 1rem;
+  }
+
+  .cretificate_i .crea_icon img {
+    width: 70%;
+  }
+}
+
+
+
+@media screen and (max-width:900px) {
+  #allbox .boardbox {
+    max-width: 768px;
+  }
+
+  #allbox .boardbox .start p {
+    font-size: 1.2rem;
+    top: 60%;
+    left: 17%;
+  }
+
+  #allbox .boardbox .start .arrow {
+    top: 70%;
+  }
+
+  /* 1 */
+  #allbox .boardbox .box1 {
+    top: 15%;
+  }
+
+  #allbox .boardbox .box1 .box1_tile img {
+    height: 94px;
+  }
+
+  /* 2 */
+  #allbox .boardbox .box2 {
+    top: 15%;
+  }
+
+  #allbox .boardbox .box2 .box2_tile img {
+    height: 94px;
+  }
+
+  #allbox .boardbox .box2 .girl img {
+    width: 75%;
+  }
+
+  #allbox .boardbox .box2 .box2_text {
+    font-size: 2.1rem;
+    top: 50%;
+  }
+
+  /* 3 */
+  #allbox .boardbox .box3 {
+    top: 15%;
+  }
+
+  #allbox .boardbox .box3 .box3_tile img {
+    height: 94px;
+  }
+
+  #allbox .boardbox .box3 .jusa1 img {
+    width: 63%;
+  }
+
+  #allbox .boardbox .box3 .box3_text {
+    font-size: 2.3rem;
+  }
+
+  #allbox .boardbox .box3 .jusa2 {
+    right: -20%;
+  }
+
+  #allbox .boardbox .box3 .jusa2 img {
+    width: 65%;
+  }
+
+  /* 4 */
+  #allbox .boardbox .box4 {
+    top: 15%;
+  }
+
+  /* 5 */
+  #allbox .boardbox .box5 {
+    top: 27.4%;
+  }
+
+  #allbox .boardbox .box5 .box5_tile img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 {
+    top: 8%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 img {
+    width: 60%;
+  }
+
+  #allbox .boardbox .box5 .box5_text {
+    font-size: 1.3rem;
+    right: 35%;
+  }
+
+  /* 6 */
+  #allbox .boardbox .box6 {
+    top: 42.9%;
+  }
+
+  #allbox .boardbox .box6 .box6_tile img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box6 .box6_text {
+    font-size: 1rem;
+  }
+
+  #allbox .boardbox .box6 .colo {
+    right: 17%;
+  }
+
+  #allbox .boardbox .box6 .colo img {
+    width: 65%;
+  }
+
+  /* 7 */
+  #allbox .boardbox .box7 {
+    top: 59.1%;
+  }
+
+  /* 8 */
+  #allbox .boardbox .box8 {
+    top: 62.1%;
+  }
+
+  #allbox .boardbox .box8 .box8_tile img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box8 .ang {
+    left: 15%;
+  }
+
+  #allbox .boardbox .box8 .ang img {
+    width: 60%;
+  }
+
+  #allbox .boardbox .box8 .box8_text {
+    font-size: 1.2rem;
+  }
+
+  /* 9 */
+  #allbox .boardbox .box9 {
+    top: 62.1%;
+  }
+
+  #allbox .boardbox .box9 .box9_tile img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box9 .sup img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box9 .box9_text {
+    font-size: 1.2rem;
+    left: 14%;
+  }
+
+  /* 10 */
+  #allbox .boardbox .box10 {
+    top: 62.1%;
+  }
+
+  #allbox .boardbox .box10 .box10_tile img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box10 .wat {
+    left: 18%;
+  }
+
+  #allbox .boardbox .box10 .wat img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box10 .box10_text {
+    font-size: 1.4rem;
+    top: 58%;
+  }
+
+  /* 11 */
+  #allbox .boardbox .box11 {
+    top: 59.1%;
+    left: 80.6%;
+  }
+
+  #allbox .box11 .hac {
+    width: 65%;
+  }
+
+  /* 12 */
+  #allbox .boardbox .box12 {
+    bottom: 40.6%;
+    right: -8.6%;
+  }
+
+  #allbox .boardbox .box12 .box12_tile img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box12 .box12_text {
+    font-size: 1.6rem;
+  }
+
+  #allbox .boardbox .box12 .ca {
+    right: 20%;
+  }
+
+  #allbox .boardbox .box12 .ca img {
+    width: 65%;
+  }
+
+  /* 13 */
+  #allbox .boardbox .box13 {
+    bottom: 55.7%;
+    right: -8.6%;
+  }
+
+  #allbox .boardbox .box13 .box13_tile img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box13 .box13_text {
+    font-size: 1.4rem;
+  }
+
+  /* portfolio */
+  .portfolio_i {
+    top: 16%;
+  }
+
+
+  /* contents */
+  .contents {
+    top: 29%;
+    left: 21%;
+  }
+
+  /* abou<profile> */
+  .profile_i .profile_text p {
+    font-size: 0.85rem;
+  }
+
+  /* cretificate */
+  .cretificate_i {
+    top: 9%;
+    gap: 20px;
+  }
+
+  .cretificate_i .cretificate_text p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:830px) {
+  #allbox .boardbox {
+    max-width: 600px;
+  }
+
+  #allbox .boardbox .start_tile img {
+    height: 180px;
+  }
+
+  #allbox .boardbox .start .star {
+    top: 9%;
+  }
+
+  #allbox .boardbox .start .star img {
+    width: 100%;
+  }
+
+  #allbox .boardbox .start p {
+    font-size: 1rem;
+    left: 18%;
+  }
+
+  /* 1 */
+  #allbox .boardbox .box1 {
+    top: 10.9%;
+  }
+
+  #allbox .boardbox .box1 .box1_tile img {
+    height: 73px;
+  }
+
+  /* 2 */
+  #allbox .boardbox .box2 {
+    top: 10.9%;
+  }
+
+  #allbox .boardbox .box2 .box2_tile img {
+    height: 73px;
+  }
+
+  #allbox .boardbox .box2 .girl {
+    left: 26%;
+  }
+
+  #allbox .boardbox .box2 .girl img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box2 .box2_text {
+    font-size: 1.6rem;
+    left: 17%;
+  }
+
+  /* 3 */
+  #allbox .boardbox .box3 {
+    top: 10.9%;
+  }
+
+  #allbox .boardbox .box3 .box3_tile img {
+    height: 73px;
+  }
+
+  #allbox .boardbox .box3 .jusa1 img {
+    width: 47%;
+  }
+
+  #allbox .boardbox .box3 .box3_text {
+    font-size: 1.9rem;
+  }
+
+  #allbox .boardbox .box3 .jusa2 {
+    top: 64%;
+    right: -39%;
+  }
+
+  #allbox .boardbox .box3 .jusa2 img {
+    width: 47%;
+  }
+
+  /* 4 */
+  #allbox .boardbox .box4 {
+    top: 10.9%;
+  }
+
+  /* 5 */
+  #allbox .boardbox .box5 {
+    top: 20.6%;
+  }
+
+  #allbox .boardbox .box5 .box5_tile img {
+    width: 50.5%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 {
+    left: -6%;
+  }
+
+  #allbox .boardbox .box5 .bagu1 img {
+    width: 45%;
+  }
+
+  #allbox .boardbox .box5 .box5_text {
+    font-size: 1rem;
+    right: 50%;
+  }
+
+  /* 6 */
+  #allbox .boardbox .box6 {
+    top: 32.6%;
+  }
+
+  #allbox .boardbox .box6 .box6_tile img {
+    width: 50.5%;
+  }
+
+  #allbox .boardbox .box6 .box6_text {
+    font-size: 0.8rem;
+  }
+
+  #allbox .boardbox .box6 .colo {
+    top: 12%;
+  }
+
+  #allbox .boardbox .box6 .colo img {
+    width: 45%;
+  }
+
+  /* 7 */
+  #allbox .boardbox .box7 {
+    top: 45.1%;
+  }
+
+  #allbox .boardbox .box7 .pung img {
+    width: 65%;
+  }
+
+  #allbox .boardbox .box7 .gg {
+    right: -15%;
+  }
+
+  #allbox .boardbox .box7 .gg img {
+    width: 80%;
+  }
+
+  /* 8 */
+  #allbox .boardbox .box8 {
+    top: 47.4%;
+  }
+
+  #allbox .boardbox .box8 .box8_tile img {
+    width: 51%;
+  }
+
+  #allbox .boardbox .box8 .ang {
+    left: 12%;
+  }
+
+  #allbox .boardbox .box8 .ang img {
+    width: 45%;
+  }
+
+  #allbox .boardbox .box8 .box8_text {
+    font-size: 1rem;
+    left: 6%;
+  }
+
+  /* 9 */
+  #allbox .boardbox .box9 {
+    top: 47.4%;
+  }
+
+  #allbox .boardbox .box9 .box9_tile img {
+    width: 51%;
+  }
+
+  #allbox .boardbox .box9 .sup {
+    left: 8%;
+  }
+
+  #allbox .boardbox .box9 .sup img {
+    width: 50%;
+  }
+
+  #allbox .boardbox .box9 .box9_text {
+    font-size: 1rem;
+    left: 10%;
+  }
+
+  /* 10 */
+  #allbox .boardbox .box10 {
+    top: 47.4%;
+  }
+
+  #allbox .boardbox .box10 .box10_tile img {
+    width: 51%;
+  }
+
+  #allbox .boardbox .box10 .wat {
+    left: 14%;
+  }
+
+  #allbox .boardbox .box10 .wat img {
+    width: 50%;
+  }
+
+  #allbox .boardbox .box10 .box10_text {
+    font-size: 1rem;
+    top: 60%;
+    left: 15%;
+  }
+
+  /* 11 */
+  #allbox .boardbox .box11 {
+    top: 45.1%;
+  }
+
+  /* 12 */
+  #allbox .boardbox .box12 {
+    right: -15.4%;
+    bottom: 54.6%;
+  }
+
+  #allbox .boardbox .box12 .box12_tile img {
+    width: 50.5%;
+  }
+
+  #allbox .boardbox .box12 .box12_text {
+    font-size: 1.3rem;
+  }
+
+  #allbox .boardbox .box12 .ca {
+    right: 24%;
+  }
+
+  #allbox .boardbox .box12 .ca img {
+    width: 50%;
+  }
+
+  /* 13 */
+  #allbox .boardbox .box13 {
+    right: -15.4%;
+    bottom: 66.3%;
+  }
+
+  #allbox .boardbox .box13 .box13_tile img {
+    width: 50.5%;
+  }
+
+  #allbox .boardbox .box13 .box13_text {
+    font-size: 1rem;
+    top: 16%;
+    left: 2%;
+  }
+
+  #allbox .boardbox .box13 .heart_1 {
+    left: 15%;
+  }
+
+  #allbox .boardbox .box13 .heart_1 img {
+    width: 55%;
+  }
+
+  #allbox .boardbox .box13 .heart_2 {
+    left: 25%;
+  }
+
+  #allbox .boardbox .box13 .heart_2 img {
+    width: 55%;
+  }
+
+  /* portfolio */
+  .portfolio_i {
+    top: 13%;
+  }
+
+  /* contenst */
+  .contents {
+    top: 21.5%;
+  }
+
+  /* abou<profile> */
+  .profile_i {
+    top: 3%;
+    gap: 20px;
+    padding-left: 18px;
+  }
+
+  .profile_i .profile_text p {
+    margin-bottom: 25px;
+    font-size: 0.6rem;
+  }
+
+  /* cretificate */
+  .cretificate_i {
+    display: flex;
+    justify-content: space-between;
+    top: 5%;
+  }
+
+  .cretificate_i .cretificate_text p {
+    font-size: 0.6rem;
+  }
+
+  .cretificate_i .crea_icon {
+    width: 50%;
+  }
+}
+
+
+
+
+#allbox {
+  display: block; /* 명시적으로 block 설정 */
+}
+
+.mo_allbox {
+  display: none !important; /* 데스크탑에서는 모바일 전용 박스 숨김 */
+}
+
+
+@media screen and (max-width: 768px) {
+  #allbox {
+    display: none !important; /* 모바일에서 숨김 */
+  }
+  .mo_allbox {
+    display: block !important; /* 모바일 버전 노출 */
+  }
+}
